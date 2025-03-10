@@ -14,10 +14,10 @@ jobs:
 
       - name: Install HTMLHint & Stylelint
         run: |
-          npm install -g htmlhint stylelint
+          npm install -g htmlhint stylelint@latest
 
       - name: Periksa HTML
-        run: htmlhint "/*.html"
+        run: htmlhint "**/*.html"
 
       - name: Periksa CSS
-        run: stylelint "/*.css"
+        run: stylelint "public/css/**/*.css"
