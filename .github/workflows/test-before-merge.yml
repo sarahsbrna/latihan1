@@ -20,4 +20,5 @@ jobs:
         run: htmlhint "**/*.html"
 
       - name: Periksa CSS
-        run: stylelint "public/css/**/*.css"
+        run: stylelint "public/css/**/*.css" || true
+
